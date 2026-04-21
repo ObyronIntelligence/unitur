@@ -1,5 +1,5 @@
 import { whatsappLink } from "@/lib/contact";
-import { User } from "lucide-react";
+import marcosPhoto from "@/assets/marcos.png";
 
 export const About = () => {
   return (
