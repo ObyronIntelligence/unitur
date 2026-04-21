@@ -1,5 +1,5 @@
-import { whatsappLink, phoneDisplay } from "@/lib/contact";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { whatsappLink, phoneDisplay, instagramUnitur } from "@/lib/contact";
+import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const Nav = () => {
@@ -41,6 +41,15 @@ export const Nav = () => {
             </a>
           ))}
           <a
+            href={instagramUnitur}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram da Unitur"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Instagram className="w-5 h-5" strokeWidth={1.5} />
+          </a>
+          <a
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
@@ -81,6 +90,15 @@ export const Nav = () => {
             >
               <MessageCircle className="w-5 h-5" />
               {phoneDisplay}
+            </a>
+            <a
+              href={instagramUnitur}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-5 py-3 font-semibold"
+            >
+              <Instagram className="w-5 h-5" />
+              @marcos.unitur
             </a>
           </div>
         </div>
