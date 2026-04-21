@@ -1,5 +1,5 @@
-import { whatsappLink, phoneDisplay } from "@/lib/contact";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { whatsappLink, phoneDisplay, instagramUnitur } from "@/lib/contact";
+import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const Nav = () => {
