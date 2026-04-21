@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroVan}
-          alt="Van Unitur em movimento"
+          alt="Mercedes-Benz Sprinter 2025 prata da Unitur"
           width={1920}
           height={1080}
           className="w-full h-full object-cover object-center opacity-50"
