@@ -72,7 +72,7 @@ export const Footer = () => {
             aria-label="Instagram Obyron Intelligence"
           >
             <span className="h-px w-6 bg-border group-hover:bg-primary transition-colors" />
-            <span>Crafted by</span>
+            <span>um site por</span>
             <span className="font-display font-semibold text-foreground/80 group-hover:text-primary transition-colors tracking-[0.2em]">
               Obyron
             </span>
