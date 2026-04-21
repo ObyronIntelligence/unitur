@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { Bus } from "lucide-react";
+import { Truck } from "lucide-react";
 import { Marquee } from "./Marquee";
 
 export const Routes = () => {
@@ -107,7 +107,7 @@ export const Routes = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-primary/60 blur-lg rounded-full" />
                   <div className="relative bg-primary text-primary-foreground p-2 rounded-full shadow-red">
-                    <Bus className="w-5 h-5" />
+                    <Truck className="w-5 h-5" />
                   </div>
                 </div>
               </button>
