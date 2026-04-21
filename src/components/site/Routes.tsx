@@ -112,6 +112,12 @@ export const Routes = () => {
                 </div>
               </button>
             </div>
+            <div className="text-right">
+              <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Destino</div>
+              <div className="font-display text-2xl font-bold">Sorocaba</div>
+            </div>
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {routes.map((r, i) => (
