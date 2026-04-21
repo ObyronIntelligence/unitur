@@ -1,4 +1,4 @@
-import { Plane, Users, MapPinned } from "lucide-react";
+import { Plane, Users, GraduationCap } from "lucide-react";
 import { whatsappLink } from "@/lib/contact";
 
 const services = [
@@ -15,7 +15,7 @@ const services = [
     cta: "Olá Marcos! Quero contratar um fretamento.",
   },
   {
-    icon: MapPinned,
+    icon: GraduationCap,
     title: "Viagens sob demanda",
     desc: "Roteiros personalizados em todo o estado de São Paulo. Você define o destino, nós cuidamos do trajeto.",
     cta: "Olá Marcos! Quero uma viagem personalizada.",
