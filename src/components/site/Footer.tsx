@@ -67,20 +67,35 @@ export const Footer = () => {
           </div>
 
           {/* Obyron signature */}
-          <a
-            href={instagramObyron}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.3em] text-muted-foreground hover:text-foreground transition-colors"
-            aria-label="Instagram Obyron Intelligence"
-          >
-            <span className="h-px w-6 bg-border group-hover:bg-primary transition-colors" />
-            <span>um site por</span>
-            <span className="font-display font-semibold text-foreground/80 group-hover:text-primary transition-colors tracking-[0.2em]">
-              Obyron
-            </span>
-            <Instagram className="w-3 h-3 opacity-60 group-hover:opacity-100 transition-opacity" strokeWidth={1.5} />
-          </a>
+          <div className="flex flex-col md:items-end gap-3">
+            <p className="text-[11px] text-muted-foreground max-w-xs md:text-right leading-relaxed">
+              Deseja um site para sua empresa? Entre em contato. Uma criação de{" "}
+              <span className="text-foreground/80 font-semibold">Obyron</span>.
+            </p>
+            <div className="flex items-center gap-3 md:justify-end">
+              <a
+                href={obyronWhatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Obyron"
+                className="group inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.25em] text-muted-foreground hover:text-primary transition-colors"
+              >
+                <MessageCircle className="w-3.5 h-3.5" strokeWidth={1.5} />
+                <span>WhatsApp</span>
+              </a>
+              <span className="h-3 w-px bg-border" />
+              <a
+                href={obyronInstagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Obyron Intelligence"
+                className="group inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.25em] text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="w-3.5 h-3.5" strokeWidth={1.5} />
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
