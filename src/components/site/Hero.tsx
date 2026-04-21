@@ -66,7 +66,7 @@ export const Hero = () => {
             <a
               href={whatsappLink()}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-4 font-semibold text-base transition-all hover:shadow-red hover:-translate-y-0.5"
             >
               <MessageCircle className="w-5 h-5" />

@@ -26,7 +26,7 @@ export const Contact = () => {
           <a
             href={whatsappLink()}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             className="group relative block bg-primary hover:bg-primary-glow text-primary-foreground p-8 md:p-12 transition-all hover:shadow-red overflow-hidden"
           >
             <div className="absolute inset-0 bg-noise opacity-20" />

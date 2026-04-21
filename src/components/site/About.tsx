@@ -68,7 +68,7 @@ export const About = () => {
             <a
               href={whatsappLink("Olá Marcos! Gostaria de conversar sobre o transporte da Unitur.")}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-10 text-primary font-semibold border-b border-primary pb-1 hover:gap-4 transition-all"
             >
               Conversar com Marcos →

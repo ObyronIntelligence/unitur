@@ -57,7 +57,7 @@ export const Services = () => {
               <a
                 href={whatsappLink(s.cta)}
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-primary transition-colors"
               >
                 Solicitar orçamento
