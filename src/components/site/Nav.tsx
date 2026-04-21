@@ -91,6 +91,15 @@ export const Nav = () => {
               <MessageCircle className="w-5 h-5" />
               {phoneDisplay}
             </a>
+            <a
+              href={instagramUnitur}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-5 py-3 font-semibold"
+            >
+              <Instagram className="w-5 h-5" />
+              @marcos.unitur
+            </a>
           </div>
         </div>
       )}
