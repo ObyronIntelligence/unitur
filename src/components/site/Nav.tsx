@@ -41,6 +41,15 @@ export const Nav = () => {
             </a>
           ))}
           <a
+            href={instagramUnitur}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram da Unitur"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Instagram className="w-5 h-5" strokeWidth={1.5} />
+          </a>
+          <a
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
