@@ -1,6 +1,36 @@
+import { useRef, useState, useEffect } from "react";
+import { Bus } from "lucide-react";
 import { Marquee } from "./Marquee";
 
 export const Routes = () => {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [progress, setProgress] = useState(0.5); // 0 to 1
+  const [dragging, setDragging] = useState(false);
+
+  useEffect(() => {
+    if (!dragging) return;
+    const handleMove = (clientX: number) => {
+      const track = trackRef.current;
+      if (!track) return;
+      const rect = track.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+      setProgress(p);
+    };
+    const onMouseMove = (e: MouseEvent) => handleMove(e.clientX);
+    const onTouchMove = (e: TouchEvent) => handleMove(e.touches[0].clientX);
+    const stop = () => setDragging(false);
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("touchmove", onTouchMove);
+    window.addEventListener("mouseup", stop);
+    window.addEventListener("touchend", stop);
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("mouseup", stop);
+      window.removeEventListener("touchend", stop);
+    };
+  }, [dragging]);
+
   const routes = [
     {
       tag: "Manhã",
@@ -47,7 +77,7 @@ export const Routes = () => {
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Origem</div>
               <div className="font-display text-2xl font-bold">Itapetininga</div>
             </div>
-            <div className="flex-1 mx-8 relative h-px">
+            <div ref={trackRef} className="flex-1 mx-8 relative h-px">
               <svg className="absolute inset-0 w-full h-px overflow-visible" preserveAspectRatio="none">
                 <line
                   x1="0" y1="0" x2="100%" y2="0"
@@ -63,20 +93,25 @@ export const Routes = () => {
                   className="animate-dash"
                 />
               </svg>
-              {/* Moving van dot */}
-              <div className="absolute top-1/2 -translate-y-1/2 animate-drive">
+              {/* Draggable van icon */}
+              <button
+                type="button"
+                onMouseDown={() => setDragging(true)}
+                onTouchStart={() => setDragging(true)}
+                style={{ left: `${progress * 100}%` }}
+                className={`absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-grab ${
+                  dragging ? "cursor-grabbing scale-110" : "hover:scale-110"
+                } transition-transform select-none touch-none`}
+                aria-label="Arraste a van pela rota"
+              >
                 <div className="relative">
-                  <div className="absolute inset-0 bg-primary blur-md" />
-                  <div className="relative w-3 h-3 bg-primary rounded-full" />
+                  <div className="absolute inset-0 bg-primary/60 blur-lg rounded-full" />
+                  <div className="relative bg-primary text-primary-foreground p-2 rounded-full shadow-red">
+                    <Bus className="w-5 h-5" />
+                  </div>
                 </div>
-              </div>
+              </button>
             </div>
-            <div className="text-right">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Destino</div>
-              <div className="font-display text-2xl font-bold">Sorocaba</div>
-            </div>
-          </div>
-        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {routes.map((r, i) => (
