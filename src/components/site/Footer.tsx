@@ -68,8 +68,9 @@ export const Footer = () => {
 
           {/* Obyron signature */}
           <div className="flex flex-col md:items-end gap-3">
-            <p className="text-[11px] text-muted-foreground max-w-xs md:text-right leading-relaxed">
-              Deseja um site para sua empresa? Entre em contato. Uma criação de{" "}
+            <p className="text-muted-foreground max-w-xs md:text-right leading-relaxed text-sm font-bold font-sans mx-0 px-0 py-0">
+              Deseja um site para sua empresa?<br />
+              Entre em contato. Uma criação de{" "}
               <span className="text-foreground/80 font-semibold">Obyron</span>.
             </p>
             <div className="flex items-center gap-3 md:justify-end">
