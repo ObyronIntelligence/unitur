@@ -1,5 +1,5 @@
-import marcos from "@/assets/marcos-portrait.jpg";
 import { whatsappLink } from "@/lib/contact";
+import { User } from "lucide-react";
 
 export const About = () => {
   return (
@@ -11,15 +11,9 @@ export const About = () => {
           {/* Image */}
           <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border border-primary/40" />
-            <div className="relative aspect-[4/5] overflow-hidden bg-card">
-              <img
-                src={marcos}
-                alt="Marcos, motorista da Unitur"
-                width={1024}
-                height={1280}
-                loading="lazy"
-                className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
-              />
+            <div className="relative aspect-[4/5] overflow-hidden bg-card flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5" />
+              <User className="w-40 h-40 text-primary/60" strokeWidth={1} />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="text-xs uppercase tracking-widest text-primary mb-1">Fundador & motorista</div>
