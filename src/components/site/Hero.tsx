@@ -22,19 +22,18 @@ export const Hero = () => {
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none" />
 
-      {/* Live indicator */}
-      <div className="absolute top-24 md:top-28 left-6 md:left-12 z-10 flex items-center gap-3 animate-fade-in">
-        <span className="relative flex h-2 w-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
-        </span>
-        <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground font-medium">
-          Operação ativa · Aeroporto ↔ Fretamento
-        </span>
-      </div>
-
       <div className="container relative z-10 pt-24">
         <div className="max-w-4xl">
+          <div className="flex items-center gap-3 mb-6 animate-fade-in">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+            </span>
+            <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground font-medium">
+              Operação ativa · Aeroporto ↔ Fretamento
+            </span>
+          </div>
+
           <div
             className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary font-semibold mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
