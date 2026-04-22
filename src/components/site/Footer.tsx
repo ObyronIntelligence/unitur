@@ -3,7 +3,8 @@ import { Instagram, MessageCircle } from "lucide-react";
 import logoUnitur from "@/assets/logo-unitur.png";
 
 const obyronInstagram = "https://www.instagram.com/obyronintelligence/";
-const obyronWhatsapp = "https://wa.me/5500000000000?text=Ol%C3%A1%20Obyron%21%20Tenho%20interesse%20em%20um%20site%20para%20minha%20empresa.";
+const obyronWhatsapp =
+  "https://wa.me/5500000000000?text=Ol%C3%A1%20Obyron%21%20Tenho%20interesse%20em%20um%20site%20para%20minha%20empresa.";
 
 export const Footer = () => {
   return (
@@ -17,19 +18,18 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3 font-display font-bold text-2xl">
               <img src={logoUnitur} alt="Logo Unitur" className="h-16 md:h-20 w-auto" />
-              <span>UNITUR<span className="text-primary">.</span></span>
+              <span>
+                UNITUR<span className="text-primary">.</span>
+              </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
-              Mobilidade universitária premium entre Itapetininga e Sorocaba.
-              Operada pessoalmente por Marcos.
+              Mobilidade universitária premium entre Itapetininga e Sorocaba. Operada pessoalmente por Marcos.
             </p>
           </div>
 
           {/* Contact */}
           <div className="space-y-4">
-            <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">
-              Contato
-            </div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">Contato</div>
             <a
               href={whatsappLink()}
               target="_blank"
@@ -54,11 +54,9 @@ export const Footer = () => {
 
           {/* Routes / Base */}
           <div className="space-y-4">
-            <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">
-              Operação
-            </div>
-            <div className="text-sm text-muted-foreground">Itapetininga ↔ Sorocaba</div>
-            <div className="text-sm text-muted-foreground">UNISO · UNIP · Seg — Sex</div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">Operação</div>
+            <div className="text-sm text-muted-foreground">Aeroporto ↔ Fretamento</div>
+            <div className="text-sm text-muted-foreground">UNISO · UNIP</div>
           </div>
         </div>
 
@@ -71,9 +69,9 @@ export const Footer = () => {
           {/* Obyron signature */}
           <div className="flex flex-col md:items-end gap-3">
             <p className="text-muted-foreground max-w-xs md:text-right leading-relaxed text-sm font-bold font-sans mx-0 px-0 py-0">
-              Deseja um site para sua empresa?<br />
-              Entre em contato. Uma criação de{" "}
-              <span className="text-foreground/80 font-semibold">Obyron</span>.
+              Deseja um site para sua empresa?
+              <br />
+              Entre em contato. Uma criação de <span className="text-foreground/80 font-semibold">Obyron</span>.
             </p>
             <div className="flex items-center gap-3 md:justify-end">
               <a
