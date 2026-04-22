@@ -16,9 +16,9 @@ const services = [
   },
   {
     icon: GraduationCap,
-    title: "Viagens sob demanda",
-    desc: "Roteiros personalizados em todo o estado de São Paulo. Você define o destino, nós cuidamos do trajeto.",
-    cta: "Olá Marcos! Quero uma viagem personalizada.",
+    title: "Transporte universitário",
+    desc: "Tempo e conforto para estudar, descansar e chegar tranquilo. Com a Unitur, sua única preocupação é a faculdade.",
+    cta: "Olá Marcos! Quero saber mais sobre o transporte universitário.",
   },
 ];
 
