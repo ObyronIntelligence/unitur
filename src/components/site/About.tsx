@@ -52,10 +52,10 @@ export const About = () => {
 
             <div className="mt-10 grid grid-cols-2 gap-4">
               {[
-                { k: "CNH", v: "Profissional" },
+                { k: "CNH", v: "AE" },
                 { k: "Veículo", v: "Revisado frequentemente" },
                 { k: "Documentação", v: "100% regular" },
-                { k: "Atendimento", v: "Pessoal" },
+                { k: "Conforto", v: "Premium" },
               ].map((item) => (
                 <div key={item.k} className="border-l-2 border-border hover:border-primary transition-colors pl-4 py-1">
                   <div className="text-[10px] uppercase tracking-widest text-muted-foreground">{item.k}</div>

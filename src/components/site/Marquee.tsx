@@ -1,5 +1,18 @@
 export const Marquee = () => {
-  const items = ["Itapetininga", "→", "Sorocaba", "·", "UNISO", "·", "UNIP", "·", "Aeroportos", "·", "Fretamento", "·"];
+  const items = [
+    "Itapetininga",
+    "→",
+    "Sorocaba",
+    "·",
+    "UNISO",
+    "·",
+    "UNIP",
+    "·",
+    "Aeroportos",
+    "·",
+    "Fretamentos",
+    "·",
+  ];
   return (
     <div className="relative py-6 border-y border-border bg-card/30 overflow-hidden mb-16 md:mb-24">
       <div className="flex gap-12 animate-marquee whitespace-nowrap">
