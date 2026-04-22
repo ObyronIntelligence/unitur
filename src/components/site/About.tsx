@@ -32,26 +32,21 @@ export const About = () => {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
-              01 — Sobre
-            </div>
+            <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">01 — Sobre</div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-8 text-balance">
               A pessoa <span className="italic text-primary">por trás</span> do volante.
             </h2>
 
             <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Marcos não é apenas um motorista — é o profissional que sua família espera quando
-                você sobe na van todos os dias. Há mais de uma década percorrendo as estradas entre
-                Itapetininga e Sorocaba, ele construiu a Unitur sobre valores inegociáveis.
+                Marcos não é apenas um motorista — é o profissional que sua família espera quando você sobe na van todos
+                os dias. Há mais de uma década percorrendo as estradas entre brasileiras, ele construiu a Unitur sobre
+                valores inegociáveis.
               </p>
-              <p className="text-foreground">
-                Pontualidade. Segurança. Respeito.
-              </p>
+              <p className="text-foreground">Pontualidade. Segurança. Respeito.</p>
               <p>
-                Cada viagem é planejada com atenção: veículo revisado, rota estudada, horário
-                cumprido. Estudantes chegam tranquilos para a aula. Pais dormem em paz.
-                Essa é a diferença que se sente em cada quilômetro.
+                Cada viagem é planejada com atenção: veículo revisado, rota estudada, horário cumprido. Estudantes
+                chegam tranquilos para a aula. Pais dormem em paz. Essa é a diferença que se sente em cada quilômetro.
               </p>
             </div>
 

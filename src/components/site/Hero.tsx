@@ -29,7 +29,7 @@ export const Hero = () => {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
         </span>
         <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground font-medium">
-          Operação ativa · Itapetininga ↔ Sorocaba
+          Operação ativa · Aeroporto ↔ Fretamento
         </span>
       </div>
 
@@ -55,14 +55,11 @@ export const Hero = () => {
             className="text-base md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed animate-fade-up"
             style={{ animationDelay: "0.35s" }}
           >
-            Transporte universitário diário, seguro e operado pessoalmente por Marcos.
-            Levamos você de Itapetininga a Sorocaba com a confiança que sua rotina exige.
+            Transporte universitário diário, seguro e operado pessoalmente por Marcos. Levamos você de Itapetininga a
+            Sorocaba com a confiança que sua rotina exige.
           </p>
 
-          <div
-            className="flex flex-col sm:flex-row gap-4 animate-fade-up"
-            style={{ animationDelay: "0.5s" }}
-          >
+          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
             <a
               href={whatsappLink()}
               target="_blank"
@@ -93,9 +90,7 @@ export const Hero = () => {
             ].map((s) => (
               <div key={s.l} className="border-l-2 border-primary pl-4">
                 <div className="font-display text-3xl md:text-4xl font-bold">{s.n}</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">
-                  {s.l}
-                </div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{s.l}</div>
               </div>
             ))}
           </div>
