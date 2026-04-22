@@ -26,9 +26,13 @@ export const Nav = () => {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
-      <nav className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#top" className="flex items-center" aria-label="Unitur - Início">
-          <img src={logoUnitur} alt="Logo Unitur" className="h-20 md:h-28 w-auto" />
+      <nav className="container flex items-center justify-between h-20 md:h-24">
+        <a href="#top" className="flex items-center shrink-0" aria-label="Unitur - Início">
+          <img
+            src={logoUnitur}
+            alt="Logo Unitur"
+            className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
