@@ -45,7 +45,7 @@ export const Routes = () => {
       tag: "Noite",
       uni: "UNIP",
       city: "Sorocaba",
-      depart: "17:30",
+      depart: "17:00",
       arrive: "18:45",
       back: "23:00",
       days: "Seg — Sex",
