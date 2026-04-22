@@ -43,7 +43,7 @@ export const About = () => {
               <p>
                 Marcos não é apenas um motorista — é o profissional que sua família espera quando
                 você sobe na van todos os dias. Há mais de uma década percorrendo as estradas entre
-                Itapetininga e Sorocaba, ele construiu a Unitur sobre três valores inegociáveis.
+                Itapetininga e Sorocaba, ele construiu a Unitur sobre valores inegociáveis.
               </p>
               <p className="text-foreground">
                 Pontualidade. Segurança. Respeito.
@@ -58,7 +58,7 @@ export const About = () => {
             <div className="mt-10 grid grid-cols-2 gap-4">
               {[
                 { k: "CNH", v: "Profissional" },
-                { k: "Veículo", v: "Revisado mensal" },
+                { k: "Veículo", v: "Revisado frequentemente" },
                 { k: "Documentação", v: "100% regular" },
                 { k: "Atendimento", v: "Pessoal" },
               ].map((item) => (
