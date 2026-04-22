@@ -1,6 +1,7 @@
 import { whatsappLink, phoneDisplay, instagramUnitur } from "@/lib/contact";
 import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
+import logoUnitur from "@/assets/logo-unitur.png";
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
