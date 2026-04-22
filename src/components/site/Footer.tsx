@@ -16,11 +16,8 @@ export const Footer = () => {
         <div className="grid gap-12 md:grid-cols-3 md:gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3 font-display font-bold text-2xl">
-              <img src={logoUnitur} alt="Logo Unitur" className="h-16 md:h-20 w-auto" />
-              <span>
-                UNITUR<span className="text-primary">.</span>
-              </span>
+            <div className="flex items-center">
+              <img src={logoUnitur} alt="Logo Unitur" className="h-24 md:h-32 w-auto" />
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Mobilidade universitária premium entre Itapetininga e Sorocaba. Operada pessoalmente por Marcos.
