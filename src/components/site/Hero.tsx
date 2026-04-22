@@ -39,7 +39,7 @@ export const Hero = () => {
             className="text-xs md:text-sm uppercase tracking-[0.4em] text-primary font-semibold mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Mobilidade universitária premium
+            Mobilidade premium
           </div>
 
           <h1
