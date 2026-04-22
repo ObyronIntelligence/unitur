@@ -10,7 +10,7 @@ const items = [
   {
     icon: Clock,
     n: "02",
-    title: "Pontualidade absoluta",
+    title: "Pontualidade",
     desc: "Horários cumpridos com precisão. Você nunca chega atrasado para a prova ou para a aula.",
   },
   {
