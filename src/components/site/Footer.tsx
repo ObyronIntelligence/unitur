@@ -1,5 +1,6 @@
 import { phoneDisplay, whatsappLink, instagramUnitur, instagramObyron } from "@/lib/contact";
 import { Instagram, MessageCircle } from "lucide-react";
+import logoUnitur from "@/assets/logo-unitur.png";
 
 const obyronInstagram = "https://www.instagram.com/obyronintelligence/";
 const obyronWhatsapp = "https://wa.me/5500000000000?text=Ol%C3%A1%20Obyron%21%20Tenho%20interesse%20em%20um%20site%20para%20minha%20empresa.";
@@ -14,8 +15,9 @@ export const Footer = () => {
         <div className="grid gap-12 md:grid-cols-3 md:gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="font-display font-bold text-2xl">
-              UNITUR<span className="text-primary">.</span>
+            <div className="flex items-center gap-3 font-display font-bold text-2xl">
+              <img src={logoUnitur} alt="Logo Unitur" className="h-10 w-auto" />
+              <span>UNITUR<span className="text-primary">.</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Mobilidade universitária premium entre Itapetininga e Sorocaba.
