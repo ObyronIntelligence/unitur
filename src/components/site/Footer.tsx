@@ -16,7 +16,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3 font-display font-bold text-2xl">
-              <img src={logoUnitur} alt="Logo Unitur" className="h-10 w-auto" />
+              <img src={logoUnitur} alt="Logo Unitur" className="h-16 md:h-20 w-auto" />
               <span>UNITUR<span className="text-primary">.</span></span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
