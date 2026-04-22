@@ -27,8 +27,9 @@ export const Nav = () => {
       }`}
     >
       <nav className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#top" className="font-display font-bold text-xl tracking-tight">
-          UNITUR<span className="text-primary">.</span>
+        <a href="#top" className="flex items-center gap-2 font-display font-bold text-xl tracking-tight">
+          <img src={logoUnitur} alt="Logo Unitur" className="h-8 w-auto" />
+          <span>UNITUR<span className="text-primary">.</span></span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
