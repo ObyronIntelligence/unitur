@@ -96,7 +96,7 @@ export const Testimonials = () => {
                 key={r.name}
                 className="pl-4 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                <figure className="group relative h-full bg-background border border-border p-8 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+                <figure className="group relative h-full bg-background border border-border p-8 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col select-none">
                   <div className="absolute -top-px -left-px h-px w-0 group-hover:w-full bg-primary transition-all duration-500" />
                   <Quote
                     className="absolute top-6 right-6 w-10 h-10 text-primary/10 group-hover:text-primary/30 transition-colors"
