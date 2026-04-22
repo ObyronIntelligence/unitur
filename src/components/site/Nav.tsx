@@ -27,11 +27,15 @@ export const Nav = () => {
       }`}
     >
       <nav className="container flex items-center justify-between h-20 md:h-24">
-        <a href="#top" className="flex items-center shrink-0" aria-label="Unitur - Início">
+        <a
+          href="#top"
+          className="flex items-center shrink-0 -my-2"
+          aria-label="Unitur - Início"
+        >
           <img
             src={logoUnitur}
             alt="Logo Unitur"
-            className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain"
+            className="block h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain object-left"
           />
         </a>
 
