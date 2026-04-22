@@ -36,24 +36,19 @@ export const Differentials = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4 lg:sticky lg:top-32 lg:self-start">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
-              04 — Por que Unitur
+              04 — Por que Unitur?
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-balance">
               Quatro razões
               <br />
               <span className="text-primary italic">inegociáveis.</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
-              Não é só sobre chegar — é sobre como você chega.
-            </p>
+            <p className="text-muted-foreground text-lg">Não é só sobre chegar — é sobre como você chega.</p>
           </div>
 
           <div className="lg:col-span-8 space-y-px bg-border">
             {items.map((it) => (
-              <div
-                key={it.n}
-                className="group bg-background hover:bg-card transition-all duration-500 p-6 md:p-10"
-              >
+              <div key={it.n} className="group bg-background hover:bg-card transition-all duration-500 p-6 md:p-10">
                 <div className="flex gap-6 md:gap-10">
                   <div className="font-display text-4xl md:text-5xl font-bold text-border group-hover:text-primary transition-colors duration-500">
                     {it.n}

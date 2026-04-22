@@ -5,7 +5,7 @@ const services = [
   {
     icon: Plane,
     title: "Transfer aeroporto",
-    desc: "Embarques pontuais para Guarulhos, Viracopos e Congonhas. Conforto e tranquilidade até o portão.",
+    desc: "Embarques pontuais para Guarulhos, Viracopos, Congonhas, etc. Conforto e tranquilidade até o portão.",
     cta: "Olá Marcos! Quero um orçamento de transfer aeroporto.",
   },
   {
@@ -36,8 +36,8 @@ export const Services = () => {
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md">
-            Mais que transporte universitário — soluções completas para quem precisa
-            chegar com segurança, em qualquer lugar.
+            Mais que transporte universitário — soluções completas para quem precisa chegar com segurança, em qualquer
+            lugar.
           </p>
         </div>
 
@@ -49,7 +49,10 @@ export const Services = () => {
             >
               <div className="absolute top-0 left-0 h-px w-0 group-hover:w-full bg-primary transition-all duration-500" />
 
-              <s.icon className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform duration-500" strokeWidth={1.5} />
+              <s.icon
+                className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform duration-500"
+                strokeWidth={1.5}
+              />
 
               <h3 className="font-display text-2xl font-bold mb-4">{s.title}</h3>
               <p className="text-muted-foreground leading-relaxed mb-8 min-h-[5rem]">{s.desc}</p>
