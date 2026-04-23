@@ -1,10 +1,10 @@
-# 🚐 Unitur
+#  Unitur
 
 > Plataforma web para apresentação de serviços de transporte e turismo, com interface moderna, responsiva e preparada para evolução com automação e IA.
 
 ---
 
-## 📌 Sobre o projeto
+##  Sobre o projeto
 
 O site **Unitur** é uma aplicação web desenvolvida para empresas de transporte e turismo que desejam ter uma presença digital profissional, moderna e eficiente.
 
@@ -14,18 +14,18 @@ Construído com tecnologias modernas, o sistema é altamente escalável e pronto
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-* 🌐 Landing page responsiva e moderna
-* 📱 Integração com WhatsApp para contato rápido
-* 🚐 Apresentação de serviços e rotas
-* ⭐ Depoimentos de clientes
-* 📊 Seções institucionais (sobre, diferenciais, etc.)
-* 🎯 Navegação fluida (SPA - Single Page Application)
+*  Landing page responsiva e moderna
+*  Integração com WhatsApp para contato rápido
+*  Apresentação de serviços e rotas
+*  Depoimentos de clientes
+*  Seções institucionais (sobre, diferenciais, etc.)
+*  Navegação fluida (SPA - Single Page Application)
 
 ---
 
-## 🖼️ Interface
+##  Interface
 
 A aplicação inclui:
 
@@ -38,17 +38,17 @@ A aplicação inclui:
 
 ---
 
-## 🏗️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
-* ⚛️ React + TypeScript
-* ⚡ Vite
-* 🎨 Tailwind CSS
-* 🧩 shadcn/ui (componentes reutilizáveis)
-* 🧪 Vitest (testes)
+*  React + TypeScript
+*  Vite
+*  Tailwind CSS
+*  shadcn/ui (componentes reutilizáveis)
+*  Vitest (testes)
 
 ---
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 src/
@@ -68,7 +68,7 @@ src/
 
 ---
 
-## ⚙️ Como rodar o projeto
+##  Como rodar o projeto
 
 ### 1. Clone o repositório
 
@@ -105,7 +105,7 @@ bun dev
 
 ---
 
-## 🚀 Build para produção
+##  Build para produção
 
 ```bash
 npm run build
@@ -113,7 +113,7 @@ npm run build
 
 ---
 
-## 🧪 Testes
+##  Testes
 
 ```bash
 npm run test
@@ -121,13 +121,13 @@ npm run test
 
 ---
 
-## 📱 Integração com WhatsApp
+##  Integração com WhatsApp
 
 O projeto conta com um botão flutuante de contato que permite comunicação direta com clientes via WhatsApp, facilitando conversões e atendimento rápido.
 
 ---
 
-## 🎯 Objetivo do projeto
+##  Objetivo do projeto
 
 * Criar uma presença digital profissional
 * Facilitar o contato com clientes
@@ -136,7 +136,7 @@ O projeto conta com um botão flutuante de contato que permite comunicação dir
 
 ---
 
-## 🔮 Possíveis evoluções
+##  Possíveis evoluções
 
 * [ ] Integração com backend (ex: Supabase)
 * [ ] Painel administrativo
@@ -146,7 +146,7 @@ O projeto conta com um botão flutuante de contato que permite comunicação dir
 
 ---
 
-## 📦 Deploy
+##  Deploy
 
 O projeto pode ser hospedado em:
 
@@ -156,7 +156,7 @@ O projeto pode ser hospedado em:
 
 ---
 
-## 🤝 Contribuição
+##  Contribuição
 
 1. Fork o projeto
 2. Crie uma branch (`feature/nova-feature`)
@@ -166,7 +166,7 @@ O projeto pode ser hospedado em:
 
 ---
 
-## 🧑‍💻 Desenvolvido por
+##  Desenvolvido por
 
 **Obyron Intelligence**
 
