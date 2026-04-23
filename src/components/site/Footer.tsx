@@ -16,11 +16,11 @@ export const Footer = () => {
         <div className="grid gap-12 md:grid-cols-3 md:gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center -ml-1">
+            <div className="flex items-center">
               <img
                 src={logoUnitur}
                 alt="Logo Unitur"
-                className="block h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain object-left"
+                className="block h-8 sm:h-9 md:h-10 lg:h-12 w-auto object-contain object-left"
               />
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
