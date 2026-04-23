@@ -70,7 +70,7 @@ export const Testimonials = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-primary/10 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="container relative">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 max-w-6xl mb-16 md:mb-20">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-20">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
               05 — Quem viaja, recomenda
