@@ -14,8 +14,8 @@ export const Nav = () => {
   }, []);
 
   const links = [
-    { href: "#rotas", label: "Rotas" },
     { href: "#sobre", label: "Sobre" },
+    { href: "#rotas", label: "Rotas" },
     { href: "#servicos", label: "Serviços" },
     { href: "#contato", label: "Contato" },
   ];
