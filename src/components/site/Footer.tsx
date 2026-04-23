@@ -24,7 +24,7 @@ export const Footer = () => {
               />
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
-              Mobilidade universitária premium entre Itapetininga e Sorocaba. Operada pessoalmente por Marcos.
+              Mobilidade premium operada por Marcos.
             </p>
           </div>
 
@@ -56,8 +56,7 @@ export const Footer = () => {
           {/* Routes / Base */}
           <div className="space-y-4">
             <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">Operação</div>
-            <div className="text-sm text-muted-foreground">Aeroporto ↔ Fretamento</div>
-            <div className="text-sm text-muted-foreground">UNISO · UNIP</div>
+            <div className="text-sm text-muted-foreground">Transporte Universitário - Aeroporto - Fretamento</div>
           </div>
         </div>
 

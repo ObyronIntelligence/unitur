@@ -30,7 +30,7 @@ export const Hero = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
             <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground font-medium">
-              Operação ativa · Aeroporto ↔ Fretamento
+              Operação ativa · Transporte Universitário - Aeroporto - Fretamento
             </span>
           </div>
 
