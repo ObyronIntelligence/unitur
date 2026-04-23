@@ -1,6 +1,27 @@
 import { useRef, useState, useEffect } from "react";
-import { BusFront } from "lucide-react";
+import { LucideProps } from "lucide-react";
 import { Marquee } from "./Marquee";
+
+const Van = (props: LucideProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M13 6v5a1 1 0 0 0 1 1h6.102a1 1 0 0 1 .712.298l.898.91a1 1 0 0 1 .288.702V17a1 1 0 0 1-1 1h-3" />
+    <path d="M5 18H3a1 1 0 0 1-1-1V8a2 2 0 0 1 2-2h12c1.1 0 2.1.8 2.4 1.8l1.176 4.2" />
+    <path d="M9 18h5" />
+    <circle cx="16" cy="18" r="2" />
+    <circle cx="7" cy="18" r="2" />
+  </svg>
+);
 
 export const Routes = () => {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -107,7 +128,7 @@ export const Routes = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-primary/60 blur-lg rounded-full" />
                   <div className="relative bg-primary text-primary-foreground p-2 rounded-full shadow-red">
-                    <BusFront className="w-5 h-5" />
+                    <Van className="w-5 h-5" />
                   </div>
                 </div>
               </button>
