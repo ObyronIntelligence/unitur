@@ -9,16 +9,13 @@ export const Contact = () => {
 
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-6">
-            06 — Embarque agora
-          </div>
+          <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-6">06 — Embarque agora</div>
           <h2 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 text-balance leading-[0.95]">
             Pronto para <br />
             <span className="text-primary red-text-glow italic">subir na van?</span>
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-            Fale direto com Marcos pelo WhatsApp. Resposta rápida, atendimento pessoal,
-            sem burocracia.
+            Fale direto com Marcos pelo WhatsApp. Resposta rápida, atendimento pessoal, sem burocracia.
           </p>
         </div>
 
@@ -58,7 +55,7 @@ export const Contact = () => {
               <Clock className="w-5 h-5 text-primary shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Resposta</div>
-                <div className="font-semibold text-sm">Em até 30 minutos</div>
+                <div className="font-semibold text-sm">O quanto antes possível</div>
               </div>
             </div>
             <a
