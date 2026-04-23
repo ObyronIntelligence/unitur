@@ -26,16 +26,16 @@ export const Nav = () => {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
-      <nav className="container flex items-center justify-between h-20 md:h-24">
+      <nav className="container flex items-center justify-between h-16 md:h-20">
         <a
           href="#top"
-          className="flex items-center shrink-0 -my-2"
+          className="flex items-center shrink-0"
           aria-label="Unitur - Início"
         >
           <img
             src={logoUnitur}
             alt="Logo Unitur"
-            className="block h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain object-left"
+            className="block h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain object-left"
           />
         </a>
 
