@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { BusFront, LucideProps } from "lucide-react";
+import { LucideProps } from "lucide-react";
 import { Marquee } from "./Marquee";
 
 const Van = (props: LucideProps) => (
