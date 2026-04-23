@@ -57,6 +57,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">Operação</div>
             <div className="text-sm text-muted-foreground">Transporte Universitário - Aeroporto - Fretamento</div>
+            <div className="text-sm text-muted-foreground">UNISO · UNIP</div>
           </div>
         </div>
 
