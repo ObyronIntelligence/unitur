@@ -79,7 +79,7 @@ export const Hero = () => {
 
           {/* Stats */}
           <div
-            className="mt-16 md:mt-24 grid grid-cols-3 gap-6 md:gap-12 max-w-2xl animate-fade-up"
+            className="mt-16 md:mt-24 grid grid-cols-3 gap-3 sm:gap-6 md:gap-12 max-w-2xl animate-fade-up"
             style={{ animationDelay: "0.7s" }}
           >
             {[
@@ -87,9 +87,9 @@ export const Hero = () => {
               { n: "5x", l: "Por semana" },
               { n: "100%", l: "Pontualidade" },
             ].map((s) => (
-              <div key={s.l} className="border-l-2 border-primary pl-4">
-                <div className="font-display text-3xl md:text-4xl font-bold">{s.n}</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground mt-1">{s.l}</div>
+              <div key={s.l} className="border-l-2 border-primary pl-3 sm:pl-4 min-w-0">
+                <div className="font-display text-2xl sm:text-3xl md:text-4xl font-bold break-words">{s.n}</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-widest text-muted-foreground mt-1 break-words">{s.l}</div>
               </div>
             ))}
           </div>
