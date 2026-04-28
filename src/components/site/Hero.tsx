@@ -87,9 +87,9 @@ export const Hero = () => {
               { n: "5x", l: "Por semana" },
               { n: "100%", l: "Pontualidade" },
             ].map((s) => (
-              <div key={s.l} className="border-l-2 border-primary pl-3 sm:pl-4 min-w-0">
-                <div className="font-display text-2xl sm:text-3xl md:text-4xl font-bold break-words">{s.n}</div>
-                <div className="text-[10px] sm:text-xs uppercase tracking-[0.15em] sm:tracking-widest text-muted-foreground mt-1 break-words">{s.l}</div>
+              <div key={s.l} className="border-l-2 border-primary pl-2 sm:pl-4 min-w-0">
+                <div className="font-display text-xl sm:text-3xl md:text-4xl font-bold leading-none whitespace-nowrap">{s.n}</div>
+                <div className="text-[9px] sm:text-xs uppercase tracking-[0.1em] sm:tracking-widest text-muted-foreground mt-2 leading-tight">{s.l}</div>
               </div>
             ))}
           </div>
