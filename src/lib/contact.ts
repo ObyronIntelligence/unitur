@@ -1,12 +1,35 @@
-const PHONE = "5515997720076";
-const MESSAGE = "Olá Marcos! Vim pelo site da Unitur e quero saber mais informações.";
+const DEFAULT_MESSAGE = "Olá! Vim pelo site da Unitur e quero saber mais informações.";
 
+export type Contact = {
+  name: string;
+  role: string;
+  phone: string; // E.164 digits only, for wa.me/tel
+  display: string; // formatted for display
+};
+
+export const contacts: Contact[] = [
+  {
+    name: "Marcos",
+    role: "Fundador & motorista",
+    phone: "5515997720076",
+    display: "+55 (15) 99772-0076",
+  },
+  {
+    name: "Unitur",
+    role: "Atendimento",
+    phone: "5515998576381",
+    display: "+55 (15) 99857-6381",
+  },
+];
+
+export const whatsappLinkFor = (phone: string, custom?: string) =>
+  `https://wa.me/${phone}?text=${encodeURIComponent(custom ?? DEFAULT_MESSAGE)}`;
+
+// Backwards-compatible: defaults to Marcos's number
 export const whatsappLink = (custom?: string) =>
-  custom
-    ? `https://wa.me/${PHONE}?text=${encodeURIComponent(custom)}`
-    : `https://wa.me/${PHONE}?text=Ol%C3%A1%20Marcos%21%20Vim%20pelo%20site%20da%20Unitur%20e%20quero%20saber%20mais%20informa%C3%A7%C3%B5es.`;
+  whatsappLinkFor(contacts[0].phone, custom ?? "Olá Marcos! Vim pelo site da Unitur e quero saber mais informações.");
 
-export const phoneDisplay = "+55 (15) 99772-0076";
+export const phoneDisplay = contacts[0].display;
 
 export const instagramUnitur = "https://www.instagram.com/marcos.unitur/";
 export const instagramObyron = "https://www.instagram.com/obyronintelligence/";

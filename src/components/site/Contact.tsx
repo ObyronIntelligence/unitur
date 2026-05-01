@@ -1,4 +1,4 @@
-import { whatsappLink, phoneDisplay, instagramUnitur } from "@/lib/contact";
+import { contacts, whatsappLinkFor, instagramUnitur } from "@/lib/contact";
 import { MessageCircle, MapPin, Clock, Phone, Instagram } from "lucide-react";
 
 export const Contact = () => {
@@ -19,29 +19,37 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <a
-            href={whatsappLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative block bg-primary hover:bg-primary-glow text-primary-foreground p-8 md:p-12 transition-all hover:shadow-red overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-noise opacity-20" />
-            <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex items-center gap-6">
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary-foreground/10 border border-primary-foreground/30 flex items-center justify-center animate-pulse-red">
-                  <MessageCircle className="w-8 h-8 md:w-10 md:h-10" />
+        <div className="max-w-3xl mx-auto space-y-px">
+          {contacts.map((c) => (
+            <a
+              key={c.phone}
+              href={whatsappLinkFor(
+                c.phone,
+                `Olá ${c.name}! Vim pelo site da Unitur e quero saber mais informações.`,
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block bg-primary hover:bg-primary-glow text-primary-foreground p-8 md:p-12 transition-all hover:shadow-red overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-noise opacity-20" />
+              <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="flex items-center gap-6">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary-foreground/10 border border-primary-foreground/30 flex items-center justify-center animate-pulse-red">
+                    <MessageCircle className="w-8 h-8 md:w-10 md:h-10" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-xs uppercase tracking-widest opacity-70 mb-1">
+                      WhatsApp · {c.name}
+                    </div>
+                    <div className="font-display text-2xl md:text-4xl font-bold">{c.display}</div>
+                  </div>
                 </div>
-                <div className="text-left">
-                  <div className="text-xs uppercase tracking-widest opacity-70 mb-1">WhatsApp · Marcos</div>
-                  <div className="font-display text-2xl md:text-4xl font-bold">{phoneDisplay}</div>
+                <div className="font-semibold text-sm uppercase tracking-widest opacity-90 group-hover:translate-x-2 transition-transform">
+                  Iniciar conversa →
                 </div>
               </div>
-              <div className="font-semibold text-sm uppercase tracking-widest opacity-90 group-hover:translate-x-2 transition-transform">
-                Iniciar conversa →
-              </div>
-            </div>
-          </a>
+            </a>
+          ))}
 
           <div className="grid md:grid-cols-3 gap-px mt-px bg-border">
             <div className="bg-card p-6 flex items-center gap-4">
@@ -59,13 +67,13 @@ export const Contact = () => {
               </div>
             </div>
             <a
-              href={`tel:+5515997720076`}
+              href={`tel:+${contacts[0].phone}`}
               className="bg-card p-6 flex items-center gap-4 hover:bg-secondary transition-colors"
             >
               <Phone className="w-5 h-5 text-primary shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Ligar</div>
-                <div className="font-semibold text-sm">{phoneDisplay}</div>
+                <div className="font-semibold text-sm">{contacts[0].display}</div>
               </div>
             </a>
           </div>

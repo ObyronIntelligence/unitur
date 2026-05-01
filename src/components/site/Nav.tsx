@@ -1,11 +1,13 @@
-import { whatsappLink, phoneDisplay, instagramUnitur } from "@/lib/contact";
+import { phoneDisplay, instagramUnitur } from "@/lib/contact";
 import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoUnitur from "@/assets/logo-unitur.png";
+import { WhatsAppPicker } from "./WhatsAppPicker";
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -61,15 +63,14 @@ export const Nav = () => {
           >
             <Instagram className="w-5 h-5" strokeWidth={1.5} />
           </a>
-          <a
-            href={whatsappLink()}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={() => setPickerOpen(true)}
             className="group inline-flex items-center gap-2 bg-primary hover:bg-primary-glow text-primary-foreground px-5 py-2.5 text-sm font-semibold transition-all hover:shadow-red"
           >
             <MessageCircle className="w-4 h-4" />
             WhatsApp
-          </a>
+          </button>
         </div>
 
         <button
@@ -94,15 +95,17 @@ export const Nav = () => {
                 {l.label}
               </a>
             ))}
-            <a
-              href={whatsappLink()}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                setPickerOpen(true);
+              }}
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-3 font-semibold mt-2"
             >
               <MessageCircle className="w-5 h-5" />
               {phoneDisplay}
-            </a>
+            </button>
             <a
               href={instagramUnitur}
               target="_blank"
@@ -115,6 +118,7 @@ export const Nav = () => {
           </div>
         </div>
       )}
+      <WhatsAppPicker open={pickerOpen} onOpenChange={setPickerOpen} />
     </header>
   );
 };
