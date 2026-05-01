@@ -12,7 +12,7 @@ export const Airport = () => {
           {/* Content */}
           <div className="order-1">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
-              02 — Aeroporto
+              03 — Aeroporto
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-8 text-balance">
               Voos com hora marcada, <span className="italic text-primary">traslado sem stress.</span>

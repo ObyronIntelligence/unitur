@@ -36,7 +36,7 @@ export const Differentials = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4 lg:sticky lg:top-32 lg:self-start">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
-              04 — Por que Unitur?
+              06 — Por que Unitur?
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-balance">
               Quatro razões
