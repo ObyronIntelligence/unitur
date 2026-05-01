@@ -71,7 +71,7 @@ export const VanShowcase = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="text-xs uppercase tracking-widest text-primary mb-1">Frota oficial</div>
-                <div className="font-display text-3xl font-bold">Sprinter Unitur</div>
+                <div className="font-display text-3xl font-bold">Van Unitur</div>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 hidden md:block">
