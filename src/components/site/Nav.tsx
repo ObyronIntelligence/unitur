@@ -15,7 +15,9 @@ export const Nav = () => {
 
   const links = [
     { href: "#sobre", label: "Sobre" },
+    { href: "#aeroporto", label: "Aeroporto" },
     { href: "#rotas", label: "Rotas" },
+    { href: "#destaque", label: "Destaque" },
     { href: "#servicos", label: "Serviços" },
     { href: "#contato", label: "Contato" },
   ];
