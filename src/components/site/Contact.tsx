@@ -1,5 +1,5 @@
 import { contacts, whatsappLinkFor, instagramUnitur } from "@/lib/contact";
-import { MessageCircle, MapPin, Clock, Phone, Instagram } from "lucide-react";
+import { MessageCircle, MapPin, Clock, Instagram } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -51,7 +51,7 @@ export const Contact = () => {
             </a>
           ))}
 
-          <div className="grid md:grid-cols-3 gap-px mt-px bg-border">
+          <div className="grid md:grid-cols-2 gap-px mt-px bg-border">
             <div className="bg-card p-6 flex items-center gap-4">
               <MapPin className="w-5 h-5 text-primary shrink-0" strokeWidth={1.5} />
               <div>
@@ -66,16 +66,6 @@ export const Contact = () => {
                 <div className="font-semibold text-sm">O quanto antes possível</div>
               </div>
             </div>
-            <a
-              href={`tel:+${contacts[0].phone}`}
-              className="bg-card p-6 flex items-center gap-4 hover:bg-secondary transition-colors"
-            >
-              <Phone className="w-5 h-5 text-primary shrink-0" strokeWidth={1.5} />
-              <div>
-                <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Ligar</div>
-                <div className="font-semibold text-sm">{contacts[0].display}</div>
-              </div>
-            </a>
           </div>
 
           {/* Instagram CTA */}
