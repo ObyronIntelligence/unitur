@@ -73,8 +73,8 @@ export const Airport = () => {
                 <div className="font-display text-3xl font-bold">GRU · CGH · VCP</div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 hidden md:block">
-              <Plane className="w-8 h-8 mb-2" strokeWidth={1.5} />
+            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 hidden md:block">
+              <Plane className="w-7 h-7 mb-2" strokeWidth={1.5} />
               <div className="text-xs uppercase tracking-widest">Pontualidade garantida</div>
             </div>
           </div>

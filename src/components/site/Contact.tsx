@@ -33,15 +33,17 @@ export const Contact = () => {
             >
               <div className="absolute inset-0 bg-noise opacity-20" />
               <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary-foreground/10 border border-primary-foreground/30 flex items-center justify-center animate-pulse-red">
-                    <MessageCircle className="w-8 h-8 md:w-10 md:h-10" />
+                <div className="flex items-center gap-4 sm:gap-6 min-w-0 w-full md:w-auto">
+                  <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-primary-foreground/10 border border-primary-foreground/30 flex items-center justify-center animate-pulse-red shrink-0">
+                    <MessageCircle className="w-7 h-7 md:w-10 md:h-10" />
                   </div>
-                  <div className="text-left">
+                  <div className="text-left min-w-0 flex-1">
                     <div className="text-xs uppercase tracking-widest opacity-70 mb-1">
                       WhatsApp · {c.name}
                     </div>
-                    <div className="font-display text-2xl md:text-4xl font-bold">{c.display}</div>
+                    <div className="font-display text-xl sm:text-2xl md:text-4xl font-bold whitespace-nowrap">
+                      {c.display}
+                    </div>
                   </div>
                 </div>
                 <div className="font-semibold text-sm uppercase tracking-widest opacity-90 group-hover:translate-x-2 transition-transform">
