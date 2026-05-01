@@ -79,7 +79,7 @@ export const Routes = () => {
 
       <div className="container relative">
         <div className="max-w-3xl mb-16 md:mb-24">
-          <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">02 — Rotas diárias</div>
+          <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">04 — Rotas diárias</div>
           <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-balance">
             Sua faculdade, todos os dias, no horário certo.
           </h2>

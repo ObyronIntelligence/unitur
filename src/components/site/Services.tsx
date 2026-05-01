@@ -29,7 +29,7 @@ export const Services = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-20">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
-              03 — Além do dia a dia
+              05 — Além do dia a dia
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter text-balance">
               Mobilidade para <span className="text-primary">cada destino.</span>
