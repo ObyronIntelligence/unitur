@@ -40,8 +40,8 @@ export const About = () => {
             <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
               <p>
                 Marcos não é apenas um motorista — é o profissional que sua família espera quando você sobe na van todos
-                os dias. Há mais de uma década percorrendo as estradas entre brasileiras, ele construiu a Unitur sobre
-                valores inegociáveis.
+                os dias. Há mais de uma década percorrendo as estradas brasileiras, ele construiu a Unitur sobre valores
+                inegociáveis.
               </p>
               <p className="text-foreground">Pontualidade. Segurança. Respeito.</p>
               <p>
