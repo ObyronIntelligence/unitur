@@ -125,7 +125,7 @@ export const Highlight = () => {
           </div>
 
           {/* Content */}
-          <div className="order-2 lg:order-2">
+          <div className="order-1 lg:order-2">
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8 text-balance">
               Uma viagem que <span className="italic text-primary red-text-glow">toca a alma.</span>
             </h2>
