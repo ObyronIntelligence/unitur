@@ -150,11 +150,11 @@ export const Routes = () => {
           {routes.map((r, i) => (
             <div
               key={r.uni}
-              className="group relative bg-card border border-border p-8 md:p-10 hover:border-primary transition-all duration-500 overflow-hidden"
+              className="group relative bg-card border border-border p-8 md:p-10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col"
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/0 group-hover:bg-primary/10 blur-3xl transition-all duration-700" />
 
-              <div className="relative">
+              <div className="relative flex flex-col flex-1">
                 <div className="flex items-start justify-between mb-8">
                   <div>
                     <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/30 text-primary text-xs uppercase tracking-widest font-semibold mb-4">
