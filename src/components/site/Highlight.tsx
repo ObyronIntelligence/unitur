@@ -38,7 +38,7 @@ export const Highlight = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 hidden md:block">
+            <div className="absolute -top-6 -right-6 bg-primary text-primary-foreground p-6 hidden md:block">
               <Calendar className="w-7 h-7 mb-2" strokeWidth={1.5} />
               <div className="font-display text-xl font-bold leading-none">Datas abertas</div>
               <div className="text-[10px] uppercase tracking-widest mt-1">reserve já</div>
