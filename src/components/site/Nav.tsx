@@ -72,7 +72,7 @@ export const Nav = () => {
 
         <button
           onClick={() => setOpen(!open)}
-          className="lg:hidden text-foreground p-2"
+          className="xl:hidden text-foreground p-2"
           aria-label="Menu"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +80,7 @@ export const Nav = () => {
       </nav>
 
       {open && (
-        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
+        <div className="xl:hidden bg-background border-t border-border animate-fade-in">
           <div className="container py-6 flex flex-col gap-4">
             {links.map((l) => (
               <a
