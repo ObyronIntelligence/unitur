@@ -36,12 +36,12 @@ export const Nav = () => {
           className="flex items-center shrink-0"
           aria-label="Unitur - Fretamento e Turismo"
         >
-          <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+          <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg lg:text-2xl whitespace-nowrap">
             UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
@@ -72,7 +72,7 @@ export const Nav = () => {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-foreground p-2"
+          className="lg:hidden text-foreground p-2"
           aria-label="Menu"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +80,7 @@ export const Nav = () => {
       </nav>
 
       {open && (
-        <div className="md:hidden bg-background border-t border-border animate-fade-in">
+        <div className="lg:hidden bg-background border-t border-border animate-fade-in">
           <div className="container py-6 flex flex-col gap-4">
             {links.map((l) => (
               <a
