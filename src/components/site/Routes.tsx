@@ -57,16 +57,18 @@ export const Routes = () => {
       tag: "Manhã",
       uni: "UNISO",
       city: "Sorocaba",
-      depart: "05:40",
       arrive: "07:40",
       back: "13:00",
       days: "Seg — Sex",
+      schedules: [
+        { label: "Veterinária", arrive: "07:40", back: "13:00" },
+        { label: "Demais cursos", arrive: "07:40", back: "11:20" },
+      ],
     },
     {
       tag: "Noite",
       uni: "UNIP",
       city: "Sorocaba",
-      depart: "17:00",
       arrive: "18:45",
       back: "23:00",
       days: "Seg — Sex",
@@ -166,20 +168,45 @@ export const Routes = () => {
                   <div className="font-display text-6xl text-border font-bold">0{i + 1}</div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border">
-                  <div>
-                    <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Saída</div>
-                    <div className="font-display text-xl font-bold">{r.depart}</div>
+                {r.schedules ? (
+                  <div className="pt-8 border-t border-border space-y-4">
+                    {r.schedules.map((s) => (
+                      <div
+                        key={s.label}
+                        className="flex items-center justify-between gap-4 bg-primary/5 border border-primary/20 px-4 py-3"
+                      >
+                        <div className="text-xs uppercase tracking-widest text-primary font-semibold">
+                          {s.label}
+                        </div>
+                        <div className="flex gap-6">
+                          <div>
+                            <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-0.5">
+                              Chegada
+                            </div>
+                            <div className="font-display text-lg font-bold text-primary">{s.arrive}</div>
+                          </div>
+                          <div>
+                            <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-0.5">
+                              Retorno
+                            </div>
+                            <div className="font-display text-lg font-bold">{s.back}</div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Chegada</div>
-                    <div className="font-display text-xl font-bold text-primary">{r.arrive}</div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-4 pt-8 border-t border-border">
+                    <div>
+                      <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Chegada</div>
+                      <div className="font-display text-xl font-bold text-primary">{r.arrive}</div>
+                    </div>
+                    <div>
+                      <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Retorno</div>
+                      <div className="font-display text-xl font-bold">{r.back}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Retorno</div>
-                    <div className="font-display text-xl font-bold">{r.back}</div>
-                  </div>
-                </div>
+                )}
 
                 <div className="text-xs text-muted-foreground mt-6 italic">
                   * Horários aproximados. Pontos de embarque combinados via WhatsApp.
