@@ -36,7 +36,7 @@ export const Nav = () => {
           className="flex items-center shrink-0"
           aria-label="Unitur - Fretamento e Turismo"
         >
-          <span className="font-display font-bold tracking-tight text-foreground text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap">
+          <span className="font-display font-bold tracking-tight text-foreground text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
             UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
           </span>
         </a>

@@ -16,7 +16,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg md:text-xl">
+              <span className="font-display font-bold tracking-tight text-foreground text-xl sm:text-2xl md:text-3xl">
                 UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
               </span>
             </div>
