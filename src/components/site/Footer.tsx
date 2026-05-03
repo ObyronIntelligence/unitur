@@ -1,6 +1,5 @@
 import { phoneDisplay, whatsappLink, instagramUnitur, instagramObyron } from "@/lib/contact";
 import { Instagram, MessageCircle } from "lucide-react";
-import logoUnitur from "@/assets/logo-unitur.png";
 
 const obyronInstagram = "https://www.instagram.com/obyronintelligence/";
 const obyronWhatsapp =
