@@ -1,7 +1,6 @@
 import { phoneDisplay, instagramUnitur } from "@/lib/contact";
 import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
-import logoUnitur from "@/assets/logo-unitur.png";
 import { WhatsAppPicker } from "./WhatsAppPicker";
 
 export const Nav = () => {
@@ -35,13 +34,11 @@ export const Nav = () => {
         <a
           href="#top"
           className="flex items-center shrink-0"
-          aria-label="Unitur - Início"
+          aria-label="Unitur - Fretamento e Turismo"
         >
-          <img
-            src={logoUnitur}
-            alt="Logo Unitur"
-            className="block h-7 sm:h-8 md:h-9 lg:h-10 w-auto object-contain object-left"
-          />
+          <span className="font-display font-bold tracking-tight text-foreground text-sm sm:text-base md:text-lg lg:text-xl whitespace-nowrap">
+            UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
