@@ -10,7 +10,7 @@ export const VanShowcase = () => {
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-1">
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
               02 — A Van
             </div>
@@ -59,7 +59,7 @@ export const VanShowcase = () => {
           </div>
 
           {/* Image */}
-          <div className="relative order-1 lg:order-2">
+          <div className="relative order-2 lg:order-2">
             <div className="absolute -top-4 -right-4 w-full h-full border border-primary/40" />
             <div className="relative aspect-[4/5] overflow-hidden bg-card">
               <img
@@ -69,7 +69,7 @@ export const VanShowcase = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute bottom-6 left-6 right-6 hidden sm:block">
                 <div className="text-xs uppercase tracking-widest text-primary mb-1">Frota oficial</div>
                 <div className="font-display text-3xl font-bold">Van Unitur</div>
               </div>

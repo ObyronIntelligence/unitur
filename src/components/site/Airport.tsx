@@ -68,7 +68,7 @@ export const Airport = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute bottom-6 left-6 right-6 hidden sm:block">
                 <div className="text-xs uppercase tracking-widest text-primary mb-1">Traslado premium</div>
                 <div className="font-display text-3xl font-bold">GRU · CGH · VCP</div>
               </div>
