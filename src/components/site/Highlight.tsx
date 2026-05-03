@@ -47,7 +47,7 @@ export const Highlight = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
-          <div className="relative order-1 lg:order-1">
+          <div className="relative order-2 lg:order-1">
             <div className="absolute -top-4 -left-4 w-full h-full border border-primary/40" />
             <div className="relative aspect-[4/5] lg:aspect-[5/6] overflow-hidden bg-card group">
               <Carousel
@@ -74,7 +74,7 @@ export const Highlight = () => {
 
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
 
-              <div className="pointer-events-none absolute bottom-6 left-6 right-6">
+              <div className="pointer-events-none absolute bottom-6 left-6 right-6 hidden sm:block">
                 <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-primary mb-2">
                   <MapPin className="w-3 h-3" />
                   Aparecida do Norte · SP
