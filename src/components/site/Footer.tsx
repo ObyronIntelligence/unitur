@@ -17,11 +17,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <img
-                src={logoUnitur}
-                alt="Logo Unitur"
-                className="block h-8 sm:h-9 md:h-10 lg:h-12 w-auto object-contain object-left"
-              />
+              <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg md:text-xl">
+                UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
+              </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Mobilidade premium operada por Marcos.
