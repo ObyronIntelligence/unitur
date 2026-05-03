@@ -219,7 +219,7 @@ export const Routes = () => {
                   </div>
                 )}
 
-                <div className="text-xs text-muted-foreground mt-6 italic">
+                <div className="text-xs text-muted-foreground mt-auto pt-6 italic">
                   * Horários aproximados. Pontos de embarque combinados via WhatsApp.
                 </div>
               </div>
