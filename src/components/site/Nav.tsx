@@ -36,12 +36,12 @@ export const Nav = () => {
           className="flex items-center shrink-0"
           aria-label="Unitur - Fretamento e Turismo"
         >
-          <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg lg:text-2xl whitespace-nowrap">
-            UNITUR <span className="text-primary">·</span> FRETAMENTO E TURISMO
+          <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg xl:text-2xl whitespace-nowrap">
+            UNITUR <span className="text-primary">·</span> <span className="hidden sm:inline">FRETAMENTO E TURISMO</span><span className="sm:hidden">FRETAMENTO</span>
           </span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-6">
           {links.map((l) => (
             <a
               key={l.href}
