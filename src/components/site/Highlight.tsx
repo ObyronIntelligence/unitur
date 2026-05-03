@@ -89,7 +89,7 @@ export const Highlight = () => {
                 type="button"
                 aria-label="Foto anterior"
                 onClick={() => api?.scrollPrev()}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 inline-flex items-center justify-center w-10 h-10 bg-background/70 hover:bg-primary hover:text-primary-foreground text-foreground backdrop-blur-sm border border-border transition-all opacity-80 hover:opacity-100"
+                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 hidden md:inline-flex items-center justify-center w-10 h-10 bg-background/70 hover:bg-primary hover:text-primary-foreground text-foreground backdrop-blur-sm border border-border transition-all opacity-80 hover:opacity-100"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
@@ -97,7 +97,7 @@ export const Highlight = () => {
                 type="button"
                 aria-label="Próxima foto"
                 onClick={() => api?.scrollNext()}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 inline-flex items-center justify-center w-10 h-10 bg-background/70 hover:bg-primary hover:text-primary-foreground text-foreground backdrop-blur-sm border border-border transition-all opacity-80 hover:opacity-100"
+                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 hidden md:inline-flex items-center justify-center w-10 h-10 bg-background/70 hover:bg-primary hover:text-primary-foreground text-foreground backdrop-blur-sm border border-border transition-all opacity-80 hover:opacity-100"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
