@@ -19,7 +19,7 @@ export const About = () => {
                 loading="lazy"
               />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute bottom-6 left-6 right-6 hidden sm:block">
                 <div className="text-xs uppercase tracking-widest text-primary mb-1">Fundador & motorista</div>
                 <div className="font-display text-3xl font-bold">Marcos Ribeiro</div>
               </div>
