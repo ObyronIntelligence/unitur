@@ -70,7 +70,7 @@ export const Routes = () => {
       uni: "UNIP",
       city: "Sorocaba",
       arrive: "18:45",
-      back: "23:00",
+      back: "22:00",
       days: "Seg — Sex",
     },
   ];
