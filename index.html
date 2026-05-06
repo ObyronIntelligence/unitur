@@ -10,8 +10,6 @@
     <meta name="application-name" content="Unitur" />
     <meta name="theme-color" content="#e11d2e" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- TODO SEO: substituir pela URL final de produção quando o domínio oficial for definido. -->
     <link rel="canonical" href="https://marcosunitur.com.br/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,17 +21,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Unitur" />
     <meta property="og:locale" content="pt_BR" />
-    <!-- TODO SEO: substituir pela URL final de produção quando o domínio oficial for definido. -->
     <meta property="og:url" content="https://marcosunitur.com.br/" />
-    <!-- TODO SEO: publicar uma imagem social 1200x630 no domínio final e atualizar este caminho. -->
-    <meta property="og:image" content="https://marcosunitur.com.br/images/og-unitur.jpg" />
+    <meta property="og:image" content="https://marcosunitur.com.br/images/og-unitur.png" />
     <meta property="og:image:alt" content="Unitur - Transporte universitário, transfer aeroporto e fretamento" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Unitur | Transporte Universitário, Aeroporto e Fretamento" />
     <meta name="twitter:description" content="Transporte universitário entre Itapetininga e Sorocaba, UNISO, UNIP, transfer aeroporto e fretamento com Marcos." />
-    <!-- TODO SEO: atualizar após publicar a imagem social final. -->
-    <meta name="twitter:image" content="https://marcosunitur.com.br/images/og-unitur.jpg" />
+    <meta name="twitter:image" content="https://marcosunitur.com.br/images/og-unitur.png" />
 
     <script type="application/ld+json">
       {
@@ -44,7 +39,7 @@
             "@id": "https://marcosunitur.com.br/#organization",
             "name": "Unitur",
             "url": "https://marcosunitur.com.br/",
-            "logo": "https://marcosunitur.com.br/images/logo-unitur.jpg",
+            "logo": "https://marcosunitur.com.br/images/logo-unitur.ico",
             "sameAs": [
               "https://www.instagram.com/marcos.unitur/"
             ],
@@ -73,7 +68,7 @@
             "url": "https://marcosunitur.com.br/",
             "description": "Transporte universitário diário entre Itapetininga e Sorocaba, transfer aeroporto e fretamento.",
             "telephone": "+55 (15) 99772-0076",
-            "image": "https://marcosunitur.com.br/images/og-unitur.jpg",
+            "image": "https://marcosunitur.com.br/images/og-unitur.png",
             "areaServed": [
               "Itapetininga",
               "Sorocaba",
@@ -129,13 +124,6 @@
   </head>
 
   <body>
-    <!--
-      TODO SEO SPA:
-      O conteúdo principal desta landing page ainda é renderizado pelo React após o carregamento do JavaScript.
-      Para produção, prerenderizar somente a rota raiz (/) e publicar o HTML resultante em dist/index.html,
-      mantendo a aplicação como one-page/SPA e preservando a hidratação do React.
-      Ver docs/seo-spa-prerender.md.
-    -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
