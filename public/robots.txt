@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # TODO SEO: substituir pelo domínio final de produção.
-Sitemap: https://TODO-SEO-dominio-final.com.br/sitemap.xml
+Sitemap: https://marcosunitur.com.br/sitemap.xml
