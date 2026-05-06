@@ -1,0 +1,18 @@
+{
+  "name": "Unitur",
+  "short_name": "Unitur",
+  "description": "Transporte universitario, transfer aeroporto e fretamento em Itapetininga.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#070707",
+  "theme_color": "#e11d2e",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
