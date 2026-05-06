@@ -15,8 +15,11 @@ export const About = () => {
               <img
                 src={marcosPhoto}
                 alt="Marcos, fundador e motorista da Unitur"
+                width={1392}
+                height={1016}
                 className="absolute inset-0 w-full h-full object-contain"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 hidden sm:block">

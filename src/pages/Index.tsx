@@ -14,21 +14,23 @@ import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <Nav />
-      <Hero />
-      <About />
-      <VanShowcase />
-      <Airport />
-      <Routes />
-      <Services />
-      <Differentials />
-      <Highlight />
-      <Testimonials />
-      <Contact />
+      <main id="conteudo-principal">
+        <Hero />
+        <About />
+        <VanShowcase />
+        <Airport />
+        <Routes />
+        <Services />
+        <Differentials />
+        <Highlight />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
       <FloatingWhatsApp />
-    </main>
+    </div>
   );
 };
 

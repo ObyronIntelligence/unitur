@@ -30,7 +30,7 @@ export const Nav = () => {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
-      <nav className="container flex items-center justify-between h-16 md:h-20">
+      <nav className="container flex items-center justify-between h-16 md:h-20" aria-label="Navegação principal">
         <a
           href="#top"
           className="flex items-center shrink-0"

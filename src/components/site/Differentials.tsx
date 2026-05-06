@@ -29,7 +29,7 @@ const items = [
 
 export const Differentials = () => {
   return (
-    <section className="relative py-24 md:py-40 overflow-hidden">
+    <section id="diferenciais" aria-labelledby="diferenciais-title" className="relative py-24 md:py-40 overflow-hidden">
       <div className="absolute right-0 top-1/3 w-[500px] h-[500px] bg-primary/10 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="container">
@@ -38,7 +38,7 @@ export const Differentials = () => {
             <div className="text-xs uppercase tracking-[0.4em] text-primary font-semibold mb-4">
               06 — Por que Unitur?
             </div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-balance">
+            <h2 id="diferenciais-title" className="font-display text-4xl md:text-6xl font-bold tracking-tighter mb-6 text-balance">
               Quatro razões
               <br />
               <span className="text-primary italic">inegociáveis.</span>

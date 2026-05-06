@@ -65,8 +65,11 @@ export const VanShowcase = () => {
               <img
                 src={vanPhoto}
                 alt="Van Mercedes-Benz Sprinter da Unitur — frota oficial"
+                width={960}
+                height={1280}
                 className="absolute inset-0 w-full h-full object-cover contrast-110"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 hidden sm:block">

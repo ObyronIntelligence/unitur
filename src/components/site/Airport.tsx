@@ -64,8 +64,11 @@ export const Airport = () => {
               <img
                 src={airportPhoto}
                 alt="Avião decolando ao pôr do sol — traslado aeroporto Unitur"
+                width={1074}
+                height={678}
                 className="absolute inset-0 w-full h-full object-cover object-center contrast-110"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 hidden sm:block">

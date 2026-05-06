@@ -1,8 +1,14 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -67,8 +73,14 @@ export default {
         elevation: "var(--shadow-elevation)",
       },
       keyframes: {
-        "accordion-down": { from: { height: "0" }, to: { height: "var(--radix-accordion-content-height)" } },
-        "accordion-up": { from: { height: "var(--radix-accordion-content-height)" }, to: { height: "0" } },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
         "fade-up": {
           "0%": { opacity: "0", transform: "translateY(24px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -81,7 +93,7 @@ export default {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
         },
-        "drive": {
+        drive: {
           "0%": { transform: "translateX(-10%)" },
           "100%": { transform: "translateX(110%)" },
         },
@@ -89,11 +101,11 @@ export default {
           "0%, 100%": { boxShadow: "0 0 0 0 hsl(0 84% 52% / 0.7)" },
           "50%": { boxShadow: "0 0 0 16px hsl(0 84% 52% / 0)" },
         },
-        "marquee": {
+        marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
-        "dash": {
+        dash: {
           to: { strokeDashoffset: "-40" },
         },
       },
@@ -103,12 +115,12 @@ export default {
         "fade-up": "fade-up 0.7s cubic-bezier(0.22,1,0.36,1) both",
         "fade-in": "fade-in 0.6s ease-out both",
         "slide-right": "slide-right 2s ease-in-out infinite",
-        "drive": "drive 8s linear infinite",
+        drive: "drive 8s linear infinite",
         "pulse-red": "pulse-red 2.4s ease-out infinite",
-        "marquee": "marquee 40s linear infinite",
-        "dash": "dash 1s linear infinite",
+        marquee: "marquee 40s linear infinite",
+        dash: "dash 1s linear infinite",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

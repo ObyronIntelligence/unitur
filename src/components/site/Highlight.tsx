@@ -15,11 +15,11 @@ import {
 } from "@/components/ui/carousel";
 
 const slides = [
-  { src: aparecidaPhoto, alt: "Santuário Nacional de Aparecida do Norte — viagem em destaque Unitur" },
-  { src: aparecida2, alt: "Fachada do Santuário Nacional de Aparecida" },
-  { src: aparecida3, alt: "Vista lateral da Basílica de Aparecida" },
-  { src: aparecida4, alt: "Interior da Basílica de Aparecida com altar-mor" },
-  { src: aparecida5, alt: "Entrada do Santuário Nacional ao entardecer" },
+  { src: aparecidaPhoto, alt: "Santuário Nacional de Aparecida do Norte — viagem em destaque Unitur", width: 860, height: 460 },
+  { src: aparecida2, alt: "Fachada do Santuário Nacional de Aparecida", width: 750, height: 422 },
+  { src: aparecida3, alt: "Vista lateral da Basílica de Aparecida", width: 1200, height: 630 },
+  { src: aparecida4, alt: "Interior da Basílica de Aparecida com altar-mor", width: 800, height: 534 },
+  { src: aparecida5, alt: "Entrada do Santuário Nacional ao entardecer", width: 800, height: 600 },
 ];
 
 export const Highlight = () => {
@@ -63,8 +63,11 @@ export const Highlight = () => {
                         <img
                           src={s.src}
                           alt={s.alt}
+                          width={s.width}
+                          height={s.height}
                           className="absolute inset-0 w-full h-full object-cover contrast-110 transition-transform duration-[6000ms] ease-out scale-105"
                           loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </CarouselItem>

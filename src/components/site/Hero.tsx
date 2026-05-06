@@ -12,6 +12,8 @@ export const Hero = () => {
           alt="Mercedes-Benz Sprinter 2025 prata da Unitur"
           width={1920}
           height={1080}
+          decoding="async"
+          fetchPriority="high"
           className="w-full h-full object-cover object-center opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
