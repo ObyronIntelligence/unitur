@@ -1,7 +1,6 @@
 import { phoneDisplay, whatsappLink, instagramUnitur, instagramObyron } from "@/lib/contact";
 import { Instagram, MessageCircle } from "lucide-react";
 
-const obyronInstagram = "https://www.instagram.com/obyronintelligence/";
 const obyronWhatsapp =
   "https://wa.me/5500000000000?text=Ol%C3%A1%20Obyron%21%20Tenho%20interesse%20em%20um%20site%20para%20minha%20empresa.";
 
@@ -84,7 +83,7 @@ export const Footer = () => {
               </a>
               <span className="h-3 w-px bg-border" />
               <a
-                href={obyronInstagram}
+                href={instagramObyron}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Obyron Intelligence"
