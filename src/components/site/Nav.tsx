@@ -1,4 +1,4 @@
-import { phoneDisplay, instagramUnitur } from "@/lib/contact";
+import { instagramUnitur } from "@/lib/contact";
 import { MessageCircle, Menu, X, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 import { WhatsAppPicker } from "./WhatsAppPicker";
