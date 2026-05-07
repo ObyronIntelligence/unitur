@@ -19,8 +19,8 @@ export const Nav = () => {
     { href: "#van", label: "A Van" },
     { href: "#aeroporto", label: "Aeroporto" },
     { href: "#rotas", label: "Rotas" },
-    { href: "#destaque", label: "Destaque" },
     { href: "#servicos", label: "Serviços" },
+    { href: "#destaque", label: "Destaque" },
     { href: "#contato", label: "Contato" },
   ];
 
@@ -101,7 +101,7 @@ export const Nav = () => {
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-3 font-semibold mt-2"
             >
               <MessageCircle className="w-5 h-5" />
-              {phoneDisplay}
+              WhatsApp
             </button>
             <a
               href={instagramUnitur}
