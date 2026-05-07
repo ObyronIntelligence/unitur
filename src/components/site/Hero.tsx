@@ -1,5 +1,5 @@
 import heroVan from "@/assets/hero-van.jpg";
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 import { MessageCircle, ArrowDown } from "lucide-react";
 
 export const Hero = () => {
@@ -61,16 +61,15 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
-            <a
-              href={whatsappLink()}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsAppPicker()}
               className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-4 font-semibold text-base transition-all hover:shadow-red hover:-translate-y-0.5"
             >
               <MessageCircle className="w-5 h-5" />
               Falar no WhatsApp
               <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-            </a>
+            </button>
             <a
               href="#rotas"
               className="inline-flex items-center justify-center gap-3 border border-border hover:border-primary text-foreground px-8 py-4 font-semibold text-base transition-all"

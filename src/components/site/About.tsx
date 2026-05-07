@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 import marcosPhoto from "@/assets/marcos.png";
 
 export const About = () => {
@@ -67,14 +67,13 @@ export const About = () => {
               ))}
             </div>
 
-            <a
-              href={whatsappLink("Olá Marcos! Gostaria de conversar sobre o transporte da Unitur.")}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsAppPicker("Olá! Gostaria de conversar sobre o transporte da Unitur.")}
               className="inline-flex items-center gap-2 mt-10 text-primary font-semibold border-b border-primary pb-1 hover:gap-4 transition-all"
             >
-              Conversar com Marcos →
-            </a>
+              Conversar agora →
+            </button>
           </div>
         </div>
       </div>

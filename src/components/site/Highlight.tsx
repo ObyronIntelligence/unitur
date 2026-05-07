@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 import aparecidaPhoto from "@/assets/aparecida.jpg";
 import aparecida2 from "@/assets/aparecida-2.jpg";
 import aparecida3 from "@/assets/aparecida-3.jpg";
@@ -153,23 +153,21 @@ export const Highlight = () => {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a
-                href={whatsappLink("Olá Marcos! Quero saber mais sobre a viagem para Aparecida do Norte.")}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={() => openWhatsAppPicker("Olá! Quero saber mais sobre a viagem para Aparecida do Norte.")}
                 className="group inline-flex items-center justify-center gap-3 bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-4 font-semibold transition-all hover:shadow-red hover:-translate-y-0.5"
               >
                 Reservar minha vaga
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-              </a>
-              <a
-                href={whatsappLink("Olá Marcos! Quero fretar uma van para Aparecida do Norte.")}
-                target="_blank"
-                rel="noopener noreferrer"
+              </button>
+              <button
+                type="button"
+                onClick={() => openWhatsAppPicker("Olá! Quero fretar uma van para Aparecida do Norte.")}
                 className="inline-flex items-center justify-center gap-3 border border-border hover:border-primary text-foreground px-8 py-4 font-semibold transition-all"
               >
                 Fretar para meu grupo
-              </a>
+              </button>
             </div>
           </div>
         </div>

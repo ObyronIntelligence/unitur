@@ -1,5 +1,5 @@
 import { Plane, Users, GraduationCap } from "lucide-react";
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 
 const services = [
   {
@@ -57,15 +57,14 @@ export const Services = () => {
               <h3 className="font-display text-2xl font-bold mb-4">{s.title}</h3>
               <p className="text-muted-foreground leading-relaxed mb-8 min-h-[5rem]">{s.desc}</p>
 
-              <a
-                href={whatsappLink(s.cta)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={() => openWhatsAppPicker(s.cta.replace("Olá Marcos!", "Olá!"))}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-foreground group-hover:text-primary transition-colors"
               >
                 Solicitar orçamento
                 <span className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
+              </button>
             </div>
           ))}
         </div>

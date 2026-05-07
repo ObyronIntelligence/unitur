@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
+import { GlobalWhatsAppPicker } from "@/components/site/GlobalWhatsAppPicker";
 
 const Index = () => {
   return (
@@ -30,6 +31,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <GlobalWhatsAppPicker />
     </div>
   );
 };
