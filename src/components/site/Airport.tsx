@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 import airportPhoto from "@/assets/airport.jpg";
 import { Plane } from "lucide-react";
 
@@ -47,14 +47,13 @@ export const Airport = () => {
               ))}
             </div>
 
-            <a
-              href={whatsappLink("Olá Marcos! Quero saber mais sobre o traslado para o aeroporto.")}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsAppPicker("Olá! Quero saber mais sobre o traslado para o aeroporto.")}
               className="inline-flex items-center gap-2 mt-10 text-primary font-semibold border-b border-primary pb-1 hover:gap-4 transition-all"
             >
               Agendar traslado →
-            </a>
+            </button>
           </div>
 
           {/* Image */}

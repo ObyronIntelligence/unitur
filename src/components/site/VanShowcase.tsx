@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/contact";
+import { openWhatsAppPicker } from "@/lib/whatsappPicker";
 import vanPhoto from "@/assets/van-unitur.jpg";
 import { Wifi } from "lucide-react";
 
@@ -48,14 +48,13 @@ export const VanShowcase = () => {
               ))}
             </div>
 
-            <a
-              href={whatsappLink("Olá Marcos! Quero saber mais sobre a van da Unitur.")}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => openWhatsAppPicker("Olá! Quero saber mais sobre a van da Unitur.")}
               className="inline-flex items-center gap-2 mt-10 text-primary font-semibold border-b border-primary pb-1 hover:gap-4 transition-all"
             >
               Conhecer a van de perto →
-            </a>
+            </button>
           </div>
 
           {/* Image */}
