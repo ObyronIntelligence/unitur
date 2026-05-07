@@ -1,5 +1,4 @@
-import { phoneDisplay, instagramUnitur, instagramObyron } from "@/lib/contact";
-import { openWhatsAppPicker } from "@/lib/whatsappPicker";
+import { contacts, whatsappLinkFor, instagramUnitur, instagramObyron } from "@/lib/contact";
 import { Instagram, MessageCircle } from "lucide-react";
 
 const obyronWhatsapp =
@@ -28,15 +27,19 @@ export const Footer = () => {
           {/* Contact */}
           <div className="space-y-4">
             <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground font-semibold">Contato</div>
-            <button
-              type="button"
-              onClick={() => openWhatsAppPicker()}
-              className="group flex items-center gap-3 text-foreground hover:text-primary transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" strokeWidth={1.5} />
-              <span className="text-sm font-medium">{phoneDisplay}</span>
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-primary">→</span>
-            </button>
+            {contacts.map((c) => (
+              <a
+                key={c.phone}
+                href={whatsappLinkFor(c.phone, `Olá ${c.name}! Vim pelo site da Unitur e quero saber mais informações.`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" strokeWidth={1.5} />
+                <span className="text-sm font-medium">{c.display}</span>
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity text-primary">→</span>
+              </a>
+            ))}
             <a
               href={instagramUnitur}
               target="_blank"
