@@ -37,7 +37,7 @@ export const Nav = () => {
           aria-label="Unitur - Fretamento e Turismo"
         >
           <span className="font-display font-bold tracking-tight text-foreground text-base sm:text-lg xl:text-2xl whitespace-nowrap">
-            UNITUR <span className="text-primary">·</span> <span className="hidden sm:inline">FRETAMENTO E TURISMO</span><span className="sm:hidden">FRETAMENTO</span>
+            UNITUR
           </span>
         </a>
 
